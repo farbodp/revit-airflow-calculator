@@ -1,6 +1,6 @@
 # HVAC System Airflow Calculator Plugin for Revit
 
-The HVAC System Airflow Calculator Plugin is a tool developed for Autodesk Revit that simplifies the process of calculating the total airflow in an HVAC system. This plugin utilizes a graph-based approach and the Depth-First Search (DFS) algorithm to traverse the system and find all connected air terminals.
+The HVAC System Airflow Calculator Plugin is a tool developed for Autodesk Revit that simplifies the process of calculating the total airflow in an HVAC system. Autodesk Revit is a Building Information Modeling (BIM) software that allows architects, engineers, and construction professionals to design, plan, and manage building projects more efficiently. Revit add-ons are custom plugins developed using the Revit API to extend the functionalities of Revit and enhance its capabilities. This plugin utilizes a graph-based approach and the Depth-First Search (DFS) algorithm to traverse the system and find all connected air terminals.
 
 For example, the following system contains 2 air terminals:
 
