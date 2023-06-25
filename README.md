@@ -57,3 +57,7 @@ private void TraverseConnections(Element element, List<ElementId> airTerminals, 
     }
 }
 ```
+
+### Note:
+
+The HVAC System Airflow Calculator Plugin uses the Depth-First Search (DFS) algorithm, one of the two common graph search algorithms. DFS was chosen for this plugin because it ensures that every node of the HVAC system graph is checked during traversal. While the other algorithm, Breadth-First Search (BFS), is typically used for finding the shortest path, DFS is more suitable for exhaustively exploring the graph structure and identifying all connected air terminals.
