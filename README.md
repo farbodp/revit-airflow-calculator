@@ -14,6 +14,14 @@ An example system is shown in below. If the user selects the element marked with
 
 ![sample file](images/sample_file_image.png)
 
+## Requirements
+* [Microsoft Visual Studio](https://visualstudio.microsoft.com/)
+* [Autodesk Revit 2023](https://www.autodesk.com/products/revit/free-trial)
+
+## Usage
+
+Follow the instructions provided here: [My First Revit Plug-in](https://www.autodesk.com/support/technical/article/caas/tsarticles/ts/7JiiE4UoWHaTjxzuF754mL.html). In section 7, replace the code in **Class1.cs** with the **SampleCommand.cs** code provided in this repo. Then build the project according to the link.
+
 ## Features
 
 - Easy selection: The user only needs to select the first element of the HVAC system, and the plugin will automatically identify and gather all the connected air terminals.
@@ -24,7 +32,7 @@ An example system is shown in below. If the user selects the element marked with
 
 ## Implementation Details
 
-`TraverseConnections` function recursively searches the graph nodes, finds the `OST_DuctTerminal` nodes and adds them to the `airTerminals` list. It also keeps track of the previously searched nodes using the `visited` set. This function is show in below:
+`TraverseConnections` function recursively searches the graph nodes, finds the `OST_DuctTerminal` nodes and adds them to the `airTerminals` list. It also keeps track of the previously searched nodes using the `visited` set. This function is shown in below:
 
 ```csharp
 private void TraverseConnections(Element element, List<ElementId> airTerminals, HashSet<ElementId> visited)
